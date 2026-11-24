@@ -1,0 +1,6 @@
+dist/
+node_modules/
+tools/local.config.json
+
+# Rutz Studio
+.private/

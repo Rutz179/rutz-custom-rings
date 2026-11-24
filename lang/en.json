@@ -1,0 +1,96 @@
+{
+  "RUTZRINGS": {
+    "Title": "Ring Presets",
+    "Menu": {
+      "Name": "Ring presets",
+      "Label": "Open",
+      "Hint": "Make your own token rings and pick the one this world uses."
+    },
+    "Current": "Ring in this world",
+    "Apply": "Apply",
+    "UseDefault": "Foundry default",
+    "PendingNote": "\"{name}\" is applied after the next reload.",
+    "WorldPresets": "This world",
+    "BuiltIn": "Built-in",
+    "New": "New preset",
+    "NoPresets": "No presets yet.",
+    "PickHint": "Edit a preset or make a new one.",
+    "Active": "In use",
+    "NeedsReload": "Reload needed",
+    "Use": "Use",
+    "UseHint": "Use in this world",
+    "Edit": "Edit",
+    "Delete": "Delete",
+    "Browse": "Browse",
+    "Clear": "Clear",
+    "Field": {
+      "Name": "Name",
+      "Ring": "Ring image",
+      "RingHint": "Ring on a transparent image",
+      "Bkg": "Background texture",
+      "BkgHint": "Empty = transparent",
+      "BkgColor": "Background tint",
+      "BkgSize": "Background size",
+      "Thickness": "Ring thickness",
+      "ThicknessHint": "Sets the token size inside the ring.",
+      "Shadow": "Inner shadow",
+      "ShadowHint": "Adds a soft shadow inside the bottom of the ring.",
+      "RingColor": "Default ring colour",
+      "Tint": "Ring tint",
+      "TintHint": "On: that part turns grey and takes the ring colour.",
+      "BandStart": "Tint start",
+      "BandEnd": "Tint end",
+      "BandHint": "Where the ring colour applies (0 centre, 1 edge).",
+      "PreviewToken": "Preview token",
+      "PreviewTokenHint": "Preview only, not saved",
+      "BuiltinPicture": "(built-in picture)"
+    },
+    "PreviewHint": "Rough preview.",
+    "Save": "Save",
+    "Saving": "Saving…",
+    "Cancel": "Cancel",
+    "DeleteDlg": {
+      "Title": "Delete preset",
+      "Content": "Delete \"{name}\"? Its files stay in the world folder.",
+      "InUse": "It is in use, so this world goes back to Foundry's default ring."
+    },
+    "Reload": {
+      "Title": "Reload",
+      "Content": "Reload all clients now?"
+    },
+    "Notify": {
+      "NeedName": "Enter a name.",
+      "NeedRing": "Pick a ring image.",
+      "Saved": "Saved \"{name}\".",
+      "SaveFailed": "Could not save: {error}",
+      "GMOnly": "Only a GM can do this.",
+      "Applied": "New ring set for this world.",
+      "LoadFailed": "Could not load the ring: {error}"
+    },
+    "Edited": "Edited",
+    "Reset": "Reset",
+    "Hide": "Hide",
+    "Show": "Show",
+    "HiddenCount": "Hidden ({n})",
+    "HideDlg": {
+      "Title": "Hide ring",
+      "Content": "Hide \"{name}\" in this world only? Module files and other worlds are not affected."
+    },
+    "ResetDlg": {
+      "Title": "Reset ring",
+      "Content": "Put \"{name}\" back to the original \"{original}\"? Files stay in the world folder."
+    },
+    "Tokenizer": {
+      "Use": "Use in Tokenizer",
+      "Undo": "Undo Tokenizer frame",
+      "Badge": "Tokenizer",
+      "Content": "Make \"{name}\" the default frame in:",
+      "Vtta": "Tokenizer: default frames (PC, hostile NPC, other NPC, tint frame)",
+      "Tok2": "Tokenizer 2: frame rules for {system} (friendly, neutral, hostile; this system's other rules are replaced)",
+      "UndoNote": "The same button puts the old values back.",
+      "Applied": "\"{name}\" is now Tokenizer's default frame.",
+      "Restored": "Tokenizer's earlier frames are back.",
+      "Failed": "Could not change Tokenizer: {error}"
+    }
+  }
+}

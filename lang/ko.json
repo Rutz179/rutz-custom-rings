@@ -1,0 +1,96 @@
+{
+  "RUTZRINGS": {
+    "Title": "링 프리셋",
+    "Menu": {
+      "Name": "링 프리셋",
+      "Label": "열기",
+      "Hint": "토큰 링을 직접 만들고, 이 월드에서 쓸 링을 고릅니다."
+    },
+    "Current": "이 월드의 링",
+    "Apply": "적용",
+    "UseDefault": "Foundry 기본",
+    "PendingNote": "다음 새로고침 후 \"{name}\" 링이 적용됩니다.",
+    "WorldPresets": "이 월드",
+    "BuiltIn": "기본 제공",
+    "New": "새 프리셋",
+    "NoPresets": "아직 프리셋이 없습니다.",
+    "PickHint": "프리셋을 편집하거나 새로 만드세요.",
+    "Active": "사용 중",
+    "NeedsReload": "새로고침 필요",
+    "Use": "사용",
+    "UseHint": "이 월드에서 사용",
+    "Edit": "편집",
+    "Delete": "삭제",
+    "Browse": "찾아보기",
+    "Clear": "지우기",
+    "Field": {
+      "Name": "이름",
+      "Ring": "링 이미지",
+      "RingHint": "투명 배경에 그린 링",
+      "Bkg": "배경 텍스처",
+      "BkgHint": "비우면 투명",
+      "BkgColor": "배경 색조",
+      "BkgSize": "배경 크기",
+      "Thickness": "링 두께",
+      "ThicknessHint": "링 안 토큰 크기를 정합니다.",
+      "Shadow": "안쪽 그림자",
+      "ShadowHint": "링 안쪽 아래에 옅은 그림자를 넣습니다.",
+      "RingColor": "기본 링 색",
+      "Tint": "링 색 입히기",
+      "TintHint": "켜면 그 구간은 흑백이 되고 링 색이 입혀집니다.",
+      "BandStart": "색 구간 시작",
+      "BandEnd": "색 구간 끝",
+      "BandHint": "링 색이 칠해지는 범위 (0 중심, 1 가장자리).",
+      "PreviewToken": "미리보기 토큰",
+      "PreviewTokenHint": "미리보기용, 저장 안 됨",
+      "BuiltinPicture": "(기본 그림)"
+    },
+    "PreviewHint": "대략적인 미리보기입니다.",
+    "Save": "저장",
+    "Saving": "저장 중…",
+    "Cancel": "취소",
+    "DeleteDlg": {
+      "Title": "프리셋 삭제",
+      "Content": "\"{name}\" 프리셋을 삭제할까요? 파일은 월드 폴더에 남습니다.",
+      "InUse": "사용 중인 링이라, 이 월드는 Foundry 기본 링으로 돌아갑니다."
+    },
+    "Reload": {
+      "Title": "새로고침",
+      "Content": "모든 접속자를 지금 새로고침할까요?"
+    },
+    "Notify": {
+      "NeedName": "이름을 입력하세요.",
+      "NeedRing": "링 이미지를 고르세요.",
+      "Saved": "\"{name}\" 저장 완료.",
+      "SaveFailed": "저장 실패: {error}",
+      "GMOnly": "GM만 할 수 있습니다.",
+      "Applied": "이 월드의 링을 바꿨습니다.",
+      "LoadFailed": "링을 불러오지 못했습니다: {error}"
+    },
+    "Edited": "편집됨",
+    "Reset": "되돌리기",
+    "Hide": "숨기기",
+    "Show": "보이기",
+    "HiddenCount": "숨김 ({n})",
+    "HideDlg": {
+      "Title": "링 숨기기",
+      "Content": "\"{name}\" 링을 이 월드에서만 숨길까요? 모듈 파일과 다른 월드는 그대로입니다."
+    },
+    "ResetDlg": {
+      "Title": "링 되돌리기",
+      "Content": "\"{name}\" 링을 원래 \"{original}\"(으)로 되돌릴까요? 파일은 월드 폴더에 남습니다."
+    },
+    "Tokenizer": {
+      "Use": "Tokenizer에 적용",
+      "Undo": "Tokenizer 프레임 되돌리기",
+      "Badge": "Tokenizer",
+      "Content": "\"{name}\" 링을 다음의 기본 프레임으로 씁니다.",
+      "Vtta": "Tokenizer: 기본 프레임 (PC, 적대 NPC, 그 밖의 NPC, 틴트 프레임)",
+      "Tok2": "Tokenizer 2: {system} 프레임 규칙 (우호·중립·적대, 이 시스템의 다른 규칙은 바뀜)",
+      "UndoNote": "같은 버튼으로 이전 값으로 되돌릴 수 있습니다.",
+      "Applied": "이제 \"{name}\" 링이 Tokenizer 기본 프레임입니다.",
+      "Restored": "Tokenizer 프레임을 이전대로 되돌렸습니다.",
+      "Failed": "Tokenizer 설정을 바꾸지 못했습니다: {error}"
+    }
+  }
+}

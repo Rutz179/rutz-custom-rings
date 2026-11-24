@@ -1,0 +1,246 @@
+/* Ring preset window. Colours inherit the Foundry theme; only neutral overlays are used. */
+/* set explicitly (Foundry core CSS is not relied on): the body fills the window, also when resized */
+.application.rutz-rings-app {
+  display: flex;
+  flex-direction: column;
+}
+.rutz-rings-app .window-content {
+  flex: 1 1 auto;
+  min-height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.rutz-rings-app .rr-root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  gap: 6px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.rutz-rings-app .rr-current {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: none;
+}
+.rutz-rings-app .rr-current label {
+  flex: none;
+  font-weight: bold;
+}
+.rutz-rings-app .rr-current select {
+  flex: 1;
+  min-width: 0;
+}
+.rutz-rings-app .rr-current button {
+  flex: none;
+  width: auto;
+  white-space: nowrap;
+}
+.rutz-rings-app .rr-note {
+  flex: none;
+  margin: 0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: rgba(127, 127, 127, 0.15);
+}
+.rutz-rings-app .rr-body {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+  gap: 10px;
+  flex: 1;
+  min-height: 0;
+}
+.rutz-rings-app .rr-list,
+.rutz-rings-app .rr-editor-pane {
+  overflow-y: auto;
+  min-height: 0;
+}
+.rutz-rings-app .rr-list h3 {
+  margin: 8px 0 4px;
+  font-size: 1em;
+  border-bottom: 1px solid rgba(127, 127, 127, 0.4);
+}
+.rutz-rings-app .rr-new {
+  width: 100%;
+  margin-bottom: 4px;
+}
+.rutz-rings-app .rr-empty {
+  opacity: 0.75;
+  margin: 6px 2px;
+}
+.rutz-rings-app .rr-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+.rutz-rings-app .rr-row:hover {
+  background: rgba(127, 127, 127, 0.1);
+}
+.rutz-rings-app .rr-row.active {
+  border-color: rgba(127, 127, 127, 0.6);
+  background: rgba(127, 127, 127, 0.15);
+}
+.rutz-rings-app .rr-thumb {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(127, 127, 127, 0.25);
+  background-repeat: no-repeat;
+  /* Sheet = ring frame (left) + background frame (right). */
+  background-size: 200% 100%;
+  background-position: 0 0, 100% 0;
+}
+.rutz-rings-app .rr-row-main {
+  flex: 1;
+  min-width: 0;
+}
+/* long names wrap instead of being cut */
+.rutz-rings-app .rr-row-name {
+  overflow-wrap: anywhere;
+  word-break: keep-all;
+  white-space: normal;
+  line-height: 1.3;
+}
+.rutz-rings-app .rr-row-badges {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.rutz-rings-app .rr-badge {
+  font-size: 0.8em;
+  padding: 0 5px;
+  border-radius: 8px;
+  border: 1px solid rgba(127, 127, 127, 0.6);
+}
+.rutz-rings-app .rr-badge.rr-active {
+  font-weight: bold;
+}
+.rutz-rings-app .rr-row-buttons {
+  display: flex;
+  gap: 3px;
+  flex: none;
+}
+.rutz-rings-app .rr-row-buttons button {
+  width: auto;
+  min-width: 28px;
+  height: 28px;
+  padding: 0 6px;
+  margin: 0;
+}
+.rutz-rings-app .rr-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.rutz-rings-app .rr-editor-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 290px;
+  gap: 10px;
+}
+.rutz-rings-app .rr-field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 6px;
+}
+.rutz-rings-app .rr-field > label {
+  font-weight: bold;
+}
+.rutz-rings-app .rr-file,
+.rutz-rings-app .rr-range,
+.rutz-rings-app .rr-inline {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.rutz-rings-app .rr-file input[type="text"] {
+  flex: 1;
+  min-width: 0;
+}
+.rutz-rings-app .rr-file button {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  margin: 0;
+}
+.rutz-rings-app .rr-range input[type="range"] {
+  flex: 1;
+  min-width: 0;
+}
+.rutz-rings-app .rr-range output {
+  flex: none;
+  width: 3em;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.rutz-rings-app .rr-inline input[type="checkbox"] {
+  flex: none;
+  margin: 0;
+}
+.rutz-rings-app input[type="color"] {
+  width: 48px;
+  height: 26px;
+  padding: 0 2px;
+  flex: none;
+}
+.rutz-rings-app .rr-hint {
+  margin: 0;
+  font-size: 0.85em;
+  opacity: 0.75;
+}
+.rutz-rings-app .rr-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.rutz-rings-app .rr-preview-canvas {
+  width: 280px;
+  height: 280px;
+  border-radius: 6px;
+  border: 1px solid rgba(127, 127, 127, 0.5);
+  background-color: #5a5a5a;
+  background-image:
+    linear-gradient(45deg, #6e6e6e 25%, transparent 25%, transparent 75%, #6e6e6e 75%),
+    linear-gradient(45deg, #6e6e6e 25%, transparent 25%, transparent 75%, #6e6e6e 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+.rutz-rings-app .rr-editor-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+}
+.rutz-rings-app .rr-editor-buttons button {
+  width: auto;
+  flex: none;
+}
+.rutz-rings-app .rr-hidden {
+  margin-top: 8px;
+}
+.rutz-rings-app .rr-hidden summary {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.rutz-rings-app .rr-row-hidden .rr-thumb {
+  opacity: 0.5;
+}
+.rutz-rings-app .rr-field > label.rr-check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.rutz-rings-app .rr-check input[type="checkbox"] {
+  margin: 0;
+  flex: none;
+}
+.rutz-rings-app .rr-range input[type="range"]:disabled {
+  opacity: 0.4;
+}
