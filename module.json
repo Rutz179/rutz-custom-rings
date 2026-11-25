@@ -2,7 +2,7 @@
   "id": "rutz-custom-rings",
   "title": "Rutz's World Rings",
   "description": "<p>Custom token rings for Foundry VTT.</p>",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "compatibility": {
     "minimum": "12",
     "verified": "14",
@@ -39,7 +39,8 @@
       "url": "https://discord.gg/bB7Ca666Bv"
     }
   ],
-  "manifest": "",
+  "manifest": "https://github.com/Rutz179/rutz-custom-rings/releases/latest/download/module.json",
   "flags": {},
-  "url": "https://github.com/Rutz179/rutz-custom-rings"
+  "url": "https://github.com/Rutz179/rutz-custom-rings",
+  "download": "https://github.com/Rutz179/rutz-custom-rings/releases/download/v4.1.0/module.zip"
 }
